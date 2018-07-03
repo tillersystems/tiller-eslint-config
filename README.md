@@ -1,4 +1,4 @@
-# @tiller-ui/eslint-config
+# @tillersystem/eslint-config
 
 This package includes the shareable ESLint configuration used at [Tiller](https://www.tillersystems.com/).
 
@@ -12,18 +12,22 @@ This package includes the shareable ESLint configuration used at [Tiller](https:
 - [Ignoring files](#ignoring-files)
 
 ---
+
 ## Usage
 
 ### Base requirements
 
 **terminal**
+
 ```sh
 yarn install -D @tillersystem/eslint-config eslint-config-airbnb-base babel-eslint eslint eslint-plugin-import
 prettier eslint-plugin-prettier eslint-config-prettier
 ```
+
 ### Vanilla
 
 **.eslintrc.js**
+
 ```js
 {
   "extends": "@tillersystem/eslint-config"
@@ -33,11 +37,13 @@ prettier eslint-plugin-prettier eslint-config-prettier
 ### React
 
 **terminal**
+
 ```sh
 yarn install -D @tillersystem/eslint-config eslint-config-airbnb babel-eslint eslint eslint-plugin-import prettier eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-prettier eslint-config-prettier
 ```
 
 **.eslintrc.js**
+
 ```js
 {
   "extends": "@tillersystem/eslint-config/react"
