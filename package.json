@@ -3,13 +3,11 @@
   "version": "0.2.1",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
-  "main": "src/index.js",
   "author": "Thomas Roux <troux@tillersystems.com>",
   "license": "MIT",
   "keywords": [
     "eslint",
     "eslintconfig",
-    "es6",
     "tillersystems"
   ],
   "bugs": {
@@ -17,9 +15,9 @@
   },
   "homepage": "https://github.com/tillersystems/tiller-eslint-config#readme",
   "files": [
-    "index.js",
-    "common.js",
-    "react.js"
+    "src/index.js",
+    "src/common.js",
+    "src/react.js"
   ],
   "scripts": {
     "release": "./scripts/release.sh"
