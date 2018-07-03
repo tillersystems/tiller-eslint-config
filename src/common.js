@@ -11,19 +11,19 @@
 // && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
 
 module.exports = {
-  extends: ['prettier', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'prettier', 'plugin:prettier/recommended'],
 
   parser: 'babel-eslint',
 
   env: {
-    browser: true,
+    browser: false,
     node: true,
     commonjs: true,
     es6: true,
     amd: false,
   },
 
-  plugins: ['import'],
+  plugins: ['import', 'prettier'],
 
   rules: {
     'function-paren-newline': 0,
@@ -38,7 +38,7 @@ module.exports = {
   },
 
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
