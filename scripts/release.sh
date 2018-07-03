@@ -31,7 +31,7 @@ yarn
 currentVersion=`cat package.json | ./node_modules/.bin/json version`
 
 # header
-printf "\n\n[Release]: current version is \e[92m %s" $currentVersion
+printf "\n\n[Release]: current version is \e[92m %s \033[0m" $currentVersion
 printf "\n[Release]: a changelog will be generated only if a fix/feat/performance/breaking token is found in git log"
 printf "\n[Release]: you must choose a new ve.rs.ion (semver)"
 printf "\n[Release]: press q to exit the next screen\n\n"
