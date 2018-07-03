@@ -27,7 +27,13 @@
   "bin": {
     "eslint": "./node_modules/.bin/eslint",
     "json": "./node_modules/.bin/json",
-    "prettier": "./node_modules/.bin/prettier"
+    "prettier": "./node_modules/.bin/prettier",
+    "pretty-quick": "./node_modules/.bin/pretty-quick"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && yarn lint"
+    }
   },
   "peerDependencies": {
     "babel-eslint": "^8.2.3",
@@ -41,7 +47,9 @@
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.1",
-    "json": "^9.0.6"
+    "husky": "1.0.0-rc.9",
+    "json": "^9.0.6",
+    "pretty-quick": "^1.6.0"
   },
   "publishConfig": {
     "access": "public"
