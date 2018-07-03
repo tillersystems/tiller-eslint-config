@@ -1,6 +1,6 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
   "main": "src/index.js",
@@ -23,6 +23,9 @@
   ],
   "scripts": {
     "release": "./scripts/release.sh"
+  },
+  "bin": {
+    "json": "./node_modules/.bin/json"
   },
   "peerDependencies": {
     "babel-eslint": "^8.2.3",

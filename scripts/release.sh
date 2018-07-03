@@ -28,7 +28,7 @@ git fetch origin --tags
 printf "[Release]: yarn"
 yarn
 
-currentVersion=`cat package.json | json version`
+currentVersion=`cat package.json | ./node_modules/.bin/json version`
 
 # header
 printf "\n\n[Release]: current version is %s" $currentVersion
@@ -50,7 +50,7 @@ npm version "$newVersion" --no-git-tag-version
 
 # update changelog
 printf "\n\n[Release]: update changelog"
-conventional-changelog --preset angular --infile CHANGELOG.md --same-file
+./node_modules/.bin/conventional-changelog --preset angular --infile CHANGELOG.md --same-file
 
 # git add and tag
 commitMessage="release v$newVersion
