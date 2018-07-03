@@ -20,9 +20,11 @@
     "react.js"
   ],
   "scripts": {
-    "release": "./scripts/release.sh"
+    "release": "./scripts/release.sh",
+    "lint": "eslint ."
   },
   "bin": {
+    "eslint": "./node_modules/.bin/eslint",
     "json": "./node_modules/.bin/json"
   },
   "peerDependencies": {
