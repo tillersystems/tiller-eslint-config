@@ -4,11 +4,11 @@ set -e # exit when error
 
 printf '\n\e[1;34m%-6s\e[m\n' "Releasing..."
 
-if ! npm owner ls | grep -q "$(npm whoami)"
-then
-  printf '\n\e[1;91m%-6s\e[m\n' "[Release]: Not an owner of the npm repo, ask a contributor for access"
-  exit 1
-fi
+# if ! npm owner ls | grep -q "$(npm whoami)"
+# then
+#   printf '\n\e[1;91m%-6s\e[m\n' "[Release]: Not an owner of the npm repo, ask a contributor for access"
+#   exit 1
+# fi
 
 currentBranch=`git rev-parse --abbrev-ref HEAD`
 if [ $currentBranch != 'master' ]; then
