@@ -39,7 +39,7 @@ printf "\n[Release]: press q to exit the next screen\n\n"
 # preview changelog
 read -p "=> [Release]: press [ENTER] to view changes since latest version.."
 
-conventional-changelog --preset angular --output-unreleased | less
+./node_modules/.bin/conventional-changelog --preset angular --output-unreleased | less
 
 # choose and bump new version
 # printf "\n\nRelease: Please enter the new chosen version > "
