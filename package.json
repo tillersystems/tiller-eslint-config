@@ -1,6 +1,6 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
   "author": "Thomas Roux <troux@tillersystems.com>",
