@@ -13,9 +13,7 @@
 module.exports = {
   extends: [
     'airbnb',
-    'prettier',
     'prettier/react',
-    'plugin:prettier/recommended',
     'plugin:react/recommended',
     './common.js',
   ],
