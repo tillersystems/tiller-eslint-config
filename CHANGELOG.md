@@ -1,3 +1,11 @@
+<a name="1.0.0"></a>
+
+# [1.0.0](http://tillersystems/tiller-eslint-config/compare/v0.4.4...v1.0.0) (2018-07-03)
+
+### Bug Fixes
+
+- **eslintrc:** remove deprecated experimentalObjectRestSpread option ([b078ea7](http://tillersystems/tiller-eslint-config/commits/b078ea7))
+
 <a name="0.4.4"></a>
 
 ## [0.4.4](http://tillersystems/tiller-eslint-config/compare/v0.4.3...v0.4.4) (2018-07-03)
