@@ -1,6 +1,6 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
   "main": "src/index.js",
