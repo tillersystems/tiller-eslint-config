@@ -35,7 +35,8 @@
     "eslint-plugin-react": "^7.9.1"
   },
   "devDependencies": {
-    "conventional-changelog-cli": "^2.0.1"
+    "conventional-changelog-cli": "^2.0.1",
+    "json": "^9.0.6"
   },
   "publishConfig": {
     "access": "public"
