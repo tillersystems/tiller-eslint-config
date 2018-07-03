@@ -11,12 +11,7 @@
 // && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
 
 module.exports = {
-  extends: [
-    'airbnb',
-    'prettier/react',
-    'plugin:react/recommended',
-    './common.js',
-  ],
+  extends: ['airbnb', 'prettier/react', 'plugin:react/recommended', './common.js'],
 
   parser: 'babel-eslint',
 
