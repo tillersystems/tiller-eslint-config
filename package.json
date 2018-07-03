@@ -21,11 +21,13 @@
   ],
   "scripts": {
     "release": "./scripts/release.sh",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "format": "prettier --config .prettierrc --color --write \"*.js\""
   },
   "bin": {
     "eslint": "./node_modules/.bin/eslint",
-    "json": "./node_modules/.bin/json"
+    "json": "./node_modules/.bin/json",
+    "prettier": "./node_modules/.bin/prettier"
   },
   "peerDependencies": {
     "babel-eslint": "^8.2.3",
