@@ -1,5 +1,5 @@
 {
-  "name": "tiller-eslint-config",
+  "name": "@tillersystems/eslint-config",
   "version": "0.1.0",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
@@ -36,5 +36,8 @@
   },
   "devDependencies": {
     "conventional-changelog-cli": "^2.0.1"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
