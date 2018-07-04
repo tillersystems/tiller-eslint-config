@@ -1,3 +1,11 @@
+<a name="1.0.3"></a>
+
+## [1.0.3](http://tillersystems/tiller-eslint-config/compare/v1.0.2...v1.0.3) (2018-07-04)
+
+### Bug Fixes
+
+- **readme:** fix typos ([d42f9f7](http://tillersystems/tiller-eslint-config/commits/d42f9f7))
+
 <a name="1.0.2"></a>
 
 ## [1.0.2](http://tillersystems/tiller-eslint-config/compare/v1.0.1...v1.0.2) (2018-07-03)
