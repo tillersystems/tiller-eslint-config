@@ -1,4 +1,4 @@
-# @tillersystem/eslint-config
+# @tillersystems/eslint-config
 
 This package includes the shareable ESLint configuration used at [Tiller](https://www.tillersystems.com/).
 
@@ -38,7 +38,7 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb-base babel-esl
 **terminal**
 
 ```sh
-yarn install -D @tillersystem/eslint-config eslint-config-airbnb babel-eslint eslint eslint-plugin-import prettier eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-prettier eslint-config-prettier
+yarn install -D @tillersystems/eslint-config eslint-config-airbnb babel-eslint eslint eslint-plugin-import prettier eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-prettier eslint-config-prettier
 ```
 
 **.eslintrc**
