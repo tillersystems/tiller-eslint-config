@@ -1,3 +1,11 @@
+<a name="1.1.5"></a>
+
+## [1.1.5](http://tillersystems/tiller-eslint-config/compare/v1.0.5...v1.1.5) (2018-07-27)
+
+### Bug Fixes
+
+- **Licence:** fix Licence copyright ([3810634](http://tillersystems/tiller-eslint-config/commits/3810634))
+
 <a name="1.0.5"></a>
 
 ## [1.0.5](http://tillersystems/tiller-eslint-config/compare/v1.0.4...v1.0.5) (2018-07-05)
