@@ -1,3 +1,11 @@
+<a name="1.1.7"></a>
+
+## [1.1.7](http://tillersystems/tiller-eslint-config/compare/v1.1.6...v1.1.7) (2018-09-19)
+
+### Bug Fixes
+
+- **yarn:** update babel-eslint to peerDependencies ([7510374](http://tillersystems/tiller-eslint-config/commits/7510374))
+
 <a name="1.1.6"></a>
 
 ## [1.1.6](http://tillersystems/tiller-eslint-config/compare/v1.1.5...v1.1.6) (2018-08-21)
