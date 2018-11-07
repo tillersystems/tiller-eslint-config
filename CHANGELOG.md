@@ -1,3 +1,11 @@
+<a name="1.1.8"></a>
+
+## [1.1.8](http://tillersystems/tiller-eslint-config/compare/v1.1.7...v1.1.8) (2018-11-07)
+
+### Bug Fixes
+
+- **peerDependencies:** update babel-eslint & eslint-plugin-prettier ([c8fc8ad](http://tillersystems/tiller-eslint-config/commits/c8fc8ad))
+
 <a name="1.1.7"></a>
 
 ## [1.1.7](http://tillersystems/tiller-eslint-config/compare/v1.1.6...v1.1.7) (2018-09-19)
