@@ -1,3 +1,5 @@
+## [1.1.9](http://tillersystems/tiller-eslint-config/compare/v1.1.8...v1.1.9) (2019-08-05)
+
 <a name="1.1.8"></a>
 
 ## [1.1.8](http://tillersystems/tiller-eslint-config/compare/v1.1.7...v1.1.8) (2018-11-07)
