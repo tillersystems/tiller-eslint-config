@@ -46,17 +46,17 @@
     "eslint-plugin-react": "^7.x"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.5",
-    "conventional-changelog-cli": "^2.0.1",
-    "eslint": "^5.0.1",
-    "eslint-config-airbnb-base": "^13.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-prettier": "^2.6.1",
-    "husky": "1.0.0-rc.9",
+    "babel-eslint": "^10.0.2",
+    "conventional-changelog-cli": "^2.0.23",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.0",
+    "husky": "3.0.2",
     "json": "^9.0.6",
-    "prettier": "^1.13.7",
-    "pretty-quick": "^1.6.0"
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   },
   "publishConfig": {
     "access": "public"
