@@ -49,6 +49,22 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb babel-eslint e
 }
 ```
 
+### Typescript
+
+**terminal**
+
+```sh
+yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-plugin-promise eslint-config-airbnb-typescript eslint babel-eslint prettier --dev
+```
+
+**.eslintrc**
+
+```js
+{
+  "extends": "@tillersystems/eslint-config/typescript"
+}
+```
+
 That's it! You can override the settings by editing the `.eslintrc` file. Learn more about [configuring ESLint](http://eslint.org/docs/user-guide/configuring) on the ESLint website.
 
 ---
