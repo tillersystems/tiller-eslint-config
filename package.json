@@ -43,8 +43,8 @@
     "eslint-config-airbnb-typescript": "^12.x",
     "eslint-config-prettier": "^3.x",
     "eslint-plugin-eslint-comments": "^3.x",
-    "eslint-plugin-jest": "^24.x",
     "eslint-plugin-import": "^2.x",
+    "eslint-plugin-jest": "^24.x",
     "eslint-plugin-jsx-a11y": "^6.x",
     "eslint-plugin-prettier": "^3.x",
     "eslint-plugin-promise": "^4.x",
@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.11.0",
+    "@typescript-eslint/parser": "^4.11.1",
     "babel-eslint": "^10.0.2",
     "conventional-changelog-cli": "^2.0.23",
     "eslint": "^6.1.0",

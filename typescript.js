@@ -19,10 +19,11 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:promise/recommended',
   ],
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2021,
     sourceType: 'module',
+    project: './tsconfig.json',
   },
   env: {
     node: true,

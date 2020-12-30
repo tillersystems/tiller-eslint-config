@@ -54,7 +54,7 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb babel-eslint e
 **terminal**
 
 ```sh
-yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-plugin-promise eslint-config-airbnb-typescript eslint babel-eslint prettier --dev
+yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-plugin-promise eslint-config-airbnb-typescript eslint babel-eslint prettier eslint-plugin-react eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin --dev
 ```
 
 **.eslintrc**
