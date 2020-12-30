@@ -1,6 +1,6 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
   "author": "Thomas Roux <troux@tillersystems.com>",
@@ -26,10 +26,10 @@
     "format": "prettier --config .prettierrc --color --write \"*.js\""
   },
   "bin": {
-    "eslint": "./node_modules/.bin/eslint",
-    "json": "./node_modules/.bin/json",
-    "prettier": "./node_modules/.bin/prettier",
-    "pretty-quick": "./node_modules/.bin/pretty-quick"
+    "eslint": "node_modules/.bin/eslint",
+    "json": "node_modules/.bin/json",
+    "prettier": "node_modules/.bin/prettier",
+    "pretty-quick": "node_modules/.bin/pretty-quick"
   },
   "husky": {
     "hooks": {

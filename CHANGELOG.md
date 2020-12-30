@@ -1,3 +1,14 @@
+## [1.2.1](http://tillersystems/tiller-eslint-config/compare/v1.1.9...v1.2.1) (2020-12-30)
+
+### Bug Fixes
+
+- **ecma:** update version from 2018 to 2021 ([b095c1c](http://tillersystems/tiller-eslint-config/commits/b095c1c))
+
+### Features
+
+- **typescript:** add eslint config for TS ([2ac1252](http://tillersystems/tiller-eslint-config/commits/2ac1252))
+- **version:** 1.1.9 to 1.2.0 ([6ed09d2](http://tillersystems/tiller-eslint-config/commits/6ed09d2))
+
 ## [1.1.9](http://tillersystems/tiller-eslint-config/compare/v1.1.8...v1.1.9) (2019-08-05)
 
 <a name="1.1.8"></a>
