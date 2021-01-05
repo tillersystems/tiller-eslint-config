@@ -11,9 +11,12 @@
 // && https://github.com/iamturns/create-exposed-app/blob/master/package.json
 
 module.exports = {
-  plugins: ['@typescript-eslint', 'eslint-comments', 'jest', 'promise', 'prettier'],
+  plugins: ['@typescript-eslint', 'eslint-comments', 'jest', 'import', 'promise', 'prettier'],
   extends: [
     'airbnb-typescript',
+    'plugin:import/errors',
+    'plugin:import/warnings',
+    'plugin:import/typescript',
     'plugin:@typescript-eslint/recommended',
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
@@ -22,16 +25,37 @@ module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 2021,
-    sourceType: 'module',
-    project: './tsconfig.json',
+    project: `./tsconfig.json`,
   },
   env: {
     node: true,
     browser: true,
-    jest: true,
+    'jest/globals': true,
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        project: './tsconfig.json',
+      },
+    },
   },
   rules: {
+    'prettier/prettier': 'error',
+    'object-curly-newline': 'off',
     'function-paren-newline': 0,
+    'consistent-return': 'off',
+    'array-callback-return': 'off',
+    'no-param-reassign': 'warn',
+    'no-return-assign': 'off',
+    'implicit-arrow-linebreak': 'off',
+    'arrow-parens': 'off',
+    'no-return-await': 'off',
+    'no-await-in-loop': 'warn',
+    'no-restricted-syntax': 'off',
+    'class-methods-use-this': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'import/no-unresolved': 2,
@@ -51,6 +75,20 @@ module.exports = {
       'error',
       { allowExpressions: true, allowTypedFunctionExpressions: true },
     ],
+    'jest/no-standalone-expect': 'off',
+    '@typescript-eslint/dot-notation': [
+      'warn',
+      {
+        allowKeywords: true,
+        allowPattern: '',
+        allowPrivateClassPropertyAccess: false,
+        allowProtectedClassPropertyAccess: false,
+      },
+    ],
+    '@typescript-eslint/indent': 'warn',
+    '@typescript-eslint/ban-ts-comment': 'warn',
+    '@typescript-eslint/no-shadow': 'off',
+    '@typescript-eslint/no-throw-literal': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
       { functions: false, classes: true, variables: true, typedefs: true },
