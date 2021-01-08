@@ -66,18 +66,18 @@ yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-impo
 ```
 
 **vscode**
-Inside your Workspace settings in VS Code, you will need to something like
+Inside your Workspace settings in VS Code, you will need to add something like
 
 ```json
   "eslint.workingDirectories": [
-    { "directory": "tiller-microservices-javascript/packages/sls-order", "changeProcessCWD": true }
+    { "directory": "tiller-microservices-javascript", "changeProcessCWD": true }
   ],
   "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true
 ```
 
-to make it work, depending on how your workspace is setup, this work if your workspace look like:
+to make it work, depending on how your workspace is setup, this works if your workspace look like:
 
 ```
 RootFolder
