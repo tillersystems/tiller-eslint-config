@@ -1,3 +1,13 @@
+## [1.2.2](http://tillersystems/tiller-eslint-config/compare/v1.2.1...v1.2.2) (2021-01-11)
+
+### Bug Fixes
+
+- **conf:** missing conf + update readme ([0897b18](http://tillersystems/tiller-eslint-config/commits/0897b18))
+
+### Features
+
+- **ts-lint:** add conf + rules ([b13329a](http://tillersystems/tiller-eslint-config/commits/b13329a))
+
 ## [1.2.1](http://tillersystems/tiller-eslint-config/compare/v1.1.9...v1.2.1) (2020-12-30)
 
 ### Bug Fixes
