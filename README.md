@@ -54,7 +54,7 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb babel-eslint e
 **terminal**
 
 ```sh
-yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-plugin-promise eslint-config-airbnb-typescript eslint babel-eslint prettier --dev
+yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-import eslint-plugin-jest eslint-plugin-prettier eslint-plugin-promise eslint-config-airbnb-typescript eslint babel-eslint prettier eslint-plugin-react eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin eslint-import-resolver-typescript --dev
 ```
 
 **.eslintrc**
@@ -63,6 +63,26 @@ yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-impo
 {
   "extends": "@tillersystems/eslint-config/typescript"
 }
+```
+
+**vscode**
+Inside your Workspace settings in VS Code, you will need to add something like
+
+```json
+  "eslint.workingDirectories": [
+    { "directory": "tiller-microservices-javascript", "changeProcessCWD": true }
+  ],
+  "eslint.packageManager": "yarn",
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true
+```
+
+to make it work, depending on how your workspace is setup, this works if your workspace look like:
+
+```
+RootFolder
+ - tiller-microservices-javascript
+ - other gits repository
 ```
 
 That's it! You can override the settings by editing the `.eslintrc` file. Learn more about [configuring ESLint](http://eslint.org/docs/user-guide/configuring) on the ESLint website.
