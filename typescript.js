@@ -58,7 +58,12 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-return-assign': 'off',
     'object-curly-newline': 'off',
+    'operator-linebreak': ['error', 'after'],
+    'max-classes-per-file': 'off',
+    'no-use-before-define': 'off',
     'prettier/prettier': 'error',
+    'import/no-cycle': 'warn',
+    'react/static-property-placement': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'import/no-unresolved': 2,
@@ -71,8 +76,6 @@ module.exports = {
     'no-prototype-builtins': 'off',
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
-    // Use function hoisting to improve code readability
-    'no-use-before-define': ['error', { functions: false, classes: true, variables: true }],
     // Makes no sense to allow type inferrence for expression parameters, but require typing the response
     '@typescript-eslint/explicit-function-return-type': [
       'error',
@@ -94,7 +97,7 @@ module.exports = {
     '@typescript-eslint/no-throw-literal': 'off',
     '@typescript-eslint/no-use-before-define': [
       'error',
-      { functions: false, classes: true, variables: true, typedefs: true },
+      { functions: false, classes: false, variables: true, typedefs: true },
     ],
   },
 };
