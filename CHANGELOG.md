@@ -1,3 +1,9 @@
+## [1.2.3](http://tillersystems/tiller-eslint-config/compare/v1.2.2...v1.2.3) (2021-01-13)
+
+### Features
+
+- **linter:** change rules ([08c6ed9](http://tillersystems/tiller-eslint-config/commits/08c6ed9))
+
 ## [1.2.2](http://tillersystems/tiller-eslint-config/compare/v1.2.1...v1.2.2) (2021-01-11)
 
 ### Bug Fixes
