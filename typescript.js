@@ -49,6 +49,7 @@ module.exports = {
   rules: {
     'array-callback-return': 'off',
     'arrow-parens': 'off',
+    'no-continue': 'off',
     'class-methods-use-this': 'off',
     'consistent-return': 'off',
     'function-paren-newline': 0,
