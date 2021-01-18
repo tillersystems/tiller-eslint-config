@@ -5,8 +5,6 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-'use strict';
-
 // Inspired by https://github.com/airbnb/javascript
 // && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
 
