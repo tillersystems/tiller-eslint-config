@@ -21,6 +21,8 @@ module.exports = {
     'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:promise/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
   ],
   ignorePatterns: ['**/*.js', 'node_modules'],
   parser: '@typescript-eslint/parser',
@@ -47,6 +49,7 @@ module.exports = {
     },
   },
   rules: {
+    'no-return-await': 'off',
     'array-callback-return': 'off',
     'arrow-parens': 'off',
     'no-continue': 'off',
@@ -59,7 +62,7 @@ module.exports = {
     'no-restricted-syntax': 'off',
     'no-return-assign': 'off',
     'object-curly-newline': 'off',
-    'operator-linebreak': ['error', 'after'],
+    'operator-linebreak': 'off',
     'max-classes-per-file': 'off',
     'no-use-before-define': 'off',
     'prettier/prettier': 'error',
@@ -67,22 +70,23 @@ module.exports = {
     'react/static-property-placement': 'off',
     'no-console': ['warn', { allow: ['warn', 'error'] }],
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
+    // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
+    'no-prototype-builtins': 'off',
+
     'import/no-unresolved': 2,
     'import/no-webpack-loader-syntax': 'error',
     'import/no-extraneous-dependencies': [
       'error',
       { devDependencies: true, optionalDependencies: false, peerDependencies: false },
     ],
-    // Too restrictive, writing ugly code to defend against a very unlikely scenario: https://eslint.org/docs/rules/no-prototype-builtins
-    'no-prototype-builtins': 'off',
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
-    // Makes no sense to allow type inferrence for expression parameters, but require typing the response
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      { allowExpressions: true, allowTypedFunctionExpressions: true },
-    ],
-    'jest/no-standalone-expect': 'off',
+
+    // Team discussion about the two followin rules:
+    // https://github.com/orgs/tillersystems/teams/engineering/discussions/7
+    // explicit-function-return-type turned off to let us the ability to use inference or not
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-inferrable-types': true,
     '@typescript-eslint/dot-notation': [
       'warn',
       {
@@ -100,5 +104,7 @@ module.exports = {
       'error',
       { functions: false, classes: false, variables: true, typedefs: true },
     ],
+
+    'jest/no-standalone-expect': 'off',
   },
 };
