@@ -1,3 +1,9 @@
+## [1.2.5](http://tillersystems/tiller-eslint-config/compare/v1.2.4...v1.2.5) (2021-01-21)
+
+### Bug Fixes
+
+- **rule:** Fixed no-inferrable-types rule activation ([3791125](http://tillersystems/tiller-eslint-config/commits/379112515411ecf2eeb54a217ec84cf1350e21dd))
+
 ## [1.2.4](http://tillersystems/tiller-eslint-config/compare/v1.2.3...v1.2.4) (2021-01-21)
 
 ## [1.2.3](http://tillersystems/tiller-eslint-config/compare/v1.2.2...v1.2.3) (2021-01-13)
