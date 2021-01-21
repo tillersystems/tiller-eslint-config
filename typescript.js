@@ -86,7 +86,7 @@ module.exports = {
     // https://github.com/orgs/tillersystems/teams/engineering/discussions/7
     // explicit-function-return-type turned off to let us the ability to use inference or not
     '@typescript-eslint/explicit-function-return-type': 'off',
-    '@typescript-eslint/no-inferrable-types': true,
+    '@typescript-eslint/no-inferrable-types': ['error'],
     '@typescript-eslint/dot-notation': [
       'warn',
       {
