@@ -43,9 +43,16 @@ jobs:
 
 workflows:
   version: 2
-  lint-deploy:
+  lint:
     jobs:
       - lint
+
+  deploy:
+    jobs:
+      - lint:
+          filters:
+            tags:
+              only: /^v.*/
       - deploy:
           requires:
             - lint
