@@ -49,15 +49,7 @@ workflows:
 
   deploy:
     jobs:
-      - lint:
-          filters:
-            tags:
-              only: /^v.*/
+      - lint
       - deploy:
           requires:
             - lint
-          filters:
-            tags:
-              only: /^v.*/
-            branches:
-              ignore: /.*/
