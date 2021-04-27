@@ -81,6 +81,7 @@ module.exports = {
     ],
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
+    'import/namespace': ['error', { allowComputed: true }],
 
     // Team discussion about the two followin rules:
     // https://github.com/orgs/tillersystems/teams/engineering/discussions/7
