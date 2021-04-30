@@ -1,9 +1,9 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "1.2.5",
+  "version": "1.3.0",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "tillersystems/tiller-eslint-config ",
-  "author": "Thomas Roux <troux@tillersystems.com>",
+  "author": "Tiller <rd+tiller-eslint-config@tillersystems.com>",
   "license": "MIT",
   "keywords": [
     "eslint",
@@ -23,7 +23,8 @@
   "scripts": {
     "release": "./scripts/release.sh",
     "lint": "eslint .",
-    "format": "prettier --config .prettierrc --color --write \"*.js\""
+    "format": "prettier --config .prettierrc --color --write \"*.js\"",
+    "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file"
   },
   "bin": {
     "eslint": "node_modules/.bin/eslint",

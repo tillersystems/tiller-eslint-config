@@ -1,3 +1,9 @@
+# [1.3.0](http://tillersystems/tiller-eslint-config/compare/v1.2.5...v1.3.0) (2021-04-30)
+
+### Features
+
+- **typescript:** Changed import/namespace to allowComputed ([021ab65](http://tillersystems/tiller-eslint-config/commits/021ab6594ca16a62c87d7a58fda76ca4f5b31f6c))
+
 ## [1.2.5](http://tillersystems/tiller-eslint-config/compare/v1.2.4...v1.2.5) (2021-01-21)
 
 ### Bug Fixes
