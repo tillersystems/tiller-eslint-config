@@ -1,3 +1,9 @@
+## [1.3.1](http://tillersystems/tiller-eslint-config/compare/v1.3.0...v1.3.1) (2021-05-03)
+
+### Bug Fixes
+
+- **rule:** Disabled return-await ([fb3a342](http://tillersystems/tiller-eslint-config/commits/fb3a342bf2ab38c311a8c95f73645c912dd2d71a))
+
 # [1.3.0](http://tillersystems/tiller-eslint-config/compare/v1.2.5...v1.3.0) (2021-04-30)
 
 ### Features
