@@ -105,6 +105,7 @@ module.exports = {
       'error',
       { functions: false, classes: false, variables: true, typedefs: true },
     ],
+    '@typescript-eslint/return-await': 'off',
 
     'jest/no-standalone-expect': 'off',
   },
