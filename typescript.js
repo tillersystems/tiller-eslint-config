@@ -22,7 +22,7 @@ module.exports = {
     'plugin:jest/recommended',
     'plugin:promise/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
+    // 'prettier/@typescript-eslint',
   ],
   ignorePatterns: ['**/*.js', 'node_modules'],
   parser: '@typescript-eslint/parser',
