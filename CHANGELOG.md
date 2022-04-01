@@ -1,3 +1,9 @@
+## [1.4.1](https://github.com/tillersystems/tiller-eslint-config/compare/v1.3.1...v1.4.1) (2022-04-01)
+
+### Features
+
+- **typescript:** Changed import order ([b40872f](https://github.com/tillersystems/tiller-eslint-config/commit/b40872fb409da1abb164637bb09cd13df334e6a1))
+
 ## [1.3.1](http://tillersystems/tiller-eslint-config/compare/v1.3.0...v1.3.1) (2021-05-03)
 
 ### Bug Fixes
