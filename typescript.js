@@ -36,6 +36,7 @@ module.exports = {
     'jest/globals': true,
   },
   settings: {
+    'import/internal-regex': '^@tiller(systems)?/',
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
     },
@@ -82,6 +83,18 @@ module.exports = {
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
     'import/namespace': ['error', { allowComputed: true }],
+    'import/newline-after-import': 'warn',
+    'import/order': [
+      'warn',
+      {
+        alphabetize: {
+          caseInsensitive: true,
+          order: 'asc',
+        },
+        groups: [['builtin', 'external'], ['internal'], ['parent', 'sibling', 'index']],
+        'newlines-between': 'always',
+      },
+    ],
 
     // Team discussion about the two followin rules:
     // https://github.com/orgs/tillersystems/teams/engineering/discussions/7
