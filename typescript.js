@@ -83,9 +83,9 @@ module.exports = {
     // https://basarat.gitbooks.io/typescript/docs/tips/defaultIsBad.html
     'import/prefer-default-export': 'off',
     'import/namespace': ['error', { allowComputed: true }],
-    'import/newline-after-import': 'warn',
+    'import/newline-after-import': 'error',
     'import/order': [
-      'warn',
+      'error',
       {
         alphabetize: {
           caseInsensitive: true,
