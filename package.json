@@ -1,6 +1,6 @@
 {
   "name": "@tillersystems/eslint-config",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Shareable ESLint configuration used at Tiller Systems",
   "repository": "git://github.com/tillersystems/tiller-eslint-config.git",
   "author": "Tiller <rd+tiller-eslint-config@tillersystems.com>",

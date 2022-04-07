@@ -1,3 +1,5 @@
+## [1.4.2](https://github.com/tillersystems/tiller-eslint-config/compare/v1.4.1...v1.4.2) (2022-04-07)
+
 ## [1.4.1](https://github.com/tillersystems/tiller-eslint-config/compare/v1.3.1...v1.4.1) (2022-04-01)
 
 ### Features
