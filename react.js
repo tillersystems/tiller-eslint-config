@@ -9,9 +9,15 @@
 // && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
 
 module.exports = {
-  extends: ['airbnb', 'prettier/react', 'plugin:react/recommended', './common.js'],
+  extends: [
+    'airbnb',
+    'plugin:react/recommended',
+    'prettier',
+    'plugin:prettier/recommended',
+    './common.js',
+  ],
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   env: {
     jest: true,
@@ -24,6 +30,7 @@ module.exports = {
   },
 
   parserOptions: {
+    requireConfigFile: false,
     ecmaFeatures: {
       jsx: true,
     },

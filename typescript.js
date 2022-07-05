@@ -12,29 +12,36 @@
 
 module.exports = {
   plugins: ['@typescript-eslint', 'eslint-comments', 'jest', 'import', 'promise', 'prettier'],
+
   extends: [
     'airbnb-typescript',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:eslint-comments/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/typescript',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:eslint-comments/recommended',
     'plugin:jest/recommended',
     'plugin:promise/recommended',
+    'plugin:react/recommended',
     'prettier',
-    // 'prettier/@typescript-eslint',
+    'plugin:prettier/recommended',
   ],
+
   ignorePatterns: ['**/*.js', 'node_modules'],
+
   parser: '@typescript-eslint/parser',
+
   parserOptions: {
     ecmaVersion: 2021,
     project: `./tsconfig.json`,
   },
+
   env: {
     node: true,
     browser: true,
     'jest/globals': true,
   },
+
   settings: {
     'import/internal-regex': '^@tiller(systems)?/',
     'import/parsers': {
@@ -46,9 +53,10 @@ module.exports = {
       },
     },
     react: {
-      version: 'latest',
+      version: 'detect',
     },
   },
+
   rules: {
     'no-return-await': 'off',
     'array-callback-return': 'off',
@@ -96,7 +104,7 @@ module.exports = {
       },
     ],
 
-    // Team discussion about the two followin rules:
+    // Team discussion about the two following rules:
     // https://github.com/orgs/tillersystems/teams/engineering/discussions/7
     // explicit-function-return-type turned off to let us the ability to use inference or not
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -110,7 +118,7 @@ module.exports = {
         allowProtectedClassPropertyAccess: false,
       },
     ],
-    '@typescript-eslint/indent': 'warn',
+    '@typescript-eslint/indent': 'off',
     '@typescript-eslint/ban-ts-comment': 'warn',
     '@typescript-eslint/no-shadow': 'off',
     '@typescript-eslint/no-throw-literal': 'off',
