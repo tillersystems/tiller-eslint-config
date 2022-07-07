@@ -27,7 +27,7 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb-base babel-esl
 
 **.eslintrc**
 
-```js
+```json
 {
   "extends": "@tillersystems/eslint-config"
 }
@@ -43,7 +43,7 @@ yarn install -D @tillersystems/eslint-config eslint-config-airbnb babel-eslint e
 
 **.eslintrc**
 
-```js
+```json
 {
   "extends": "@tillersystems/eslint-config/react"
 }
@@ -59,7 +59,7 @@ yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-impo
 
 **.eslintrc**
 
-```js
+```json
 {
   "extends": "@tillersystems/eslint-config/typescript"
 }
@@ -69,12 +69,17 @@ yarn add eslint-config-prettier eslint-plugin-eslint-comments eslint-plugin-impo
 Inside your Workspace settings in VS Code, you will need to add something like
 
 ```json
+{
   "eslint.workingDirectories": [
-    { "directory": "tiller-microservices-javascript", "changeProcessCWD": true }
+    {
+      "directory": "tiller-microservices-javascript",
+      "changeProcessCWD": true
+    }
   ],
   "eslint.packageManager": "yarn",
   "eslint.format.enable": true,
   "eslint.lintTask.enable": true
+}
 ```
 
 to make it work, depending on how your workspace is setup, this works if your workspace look like:

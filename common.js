@@ -11,7 +11,7 @@
 module.exports = {
   extends: ['eslint:recommended', 'prettier', 'plugin:prettier/recommended'],
 
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   env: {
     browser: false,
@@ -36,6 +36,7 @@ module.exports = {
   },
 
   parserOptions: {
+    requireConfigFile: false,
     ecmaVersion: 2018,
     sourceType: 'module',
   },
