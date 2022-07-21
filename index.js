@@ -1,13 +1,27 @@
-/**
- * Copyright (c) 2018-present, Tiller Systems.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// Inspired by https://github.com/airbnb/javascript
-// && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
+const rules = require('./eslint');
 
 module.exports = {
-  extends: ['airbnb-base/legacy', './common.js'],
+  overrides: [
+    {
+      files: ['*.js'],
+      env: {
+        browser: true,
+        node: true,
+        es2021: true,
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:import/recommended',
+        'plugin:promise/recommended',
+        'airbnb-base',
+        'prettier',
+      ],
+      plugins: ['import', 'promise', 'eslint-comments'],
+      rules: {
+        ...rules.baseRules,
+        ...rules.importsRules,
+        ...rules.promisesRules,
+      },
+    },
+  ],
 };

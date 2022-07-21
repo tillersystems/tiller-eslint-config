@@ -1,38 +1,42 @@
-/**
- * Copyright (c) 2018-present, Tiller Systems.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-// Inspired by https://github.com/airbnb/javascript
-// && https://github.com/facebook/create-react-app/blob/next/packages/eslint-config-react-app/index.js
+const rules = require('./eslint');
 
 module.exports = {
-  extends: [
-    'airbnb',
-    'plugin:react/recommended',
-    'prettier',
-    'plugin:prettier/recommended',
-    './common.js',
-  ],
-
-  parser: '@babel/eslint-parser',
-
-  env: {
-    jest: true,
-  },
-
-  rules: {
-    'react/jsx-filename-extension': [1, { extensions: ['.js', '.jsx'] }],
-    'react/forbid-prop-types': [0, { forbid: [0] }],
-    'react/no-typos': 0,
-  },
-
-  parserOptions: {
-    requireConfigFile: false,
-    ecmaFeatures: {
-      jsx: true,
+  overrides: [
+    {
+      // maybe separate them
+      files: ['*.jsx', '*.tsx'],
+      env: {
+        browser: true,
+        es2021: true,
+      },
+      settings: {
+        react: {
+          version: 'detect',
+        },
+      },
+      extends: [
+        'eslint:recommended',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+        'plugin:import/recommended',
+        'plugin:import/typescript',
+        'plugin:promise/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'airbnb',
+        'airbnb-typescript',
+        'prettier',
+      ],
+      rules: {
+        ...rules.a11yRules,
+        ...rules.baseRules,
+        ...rules.importsRules,
+        ...rules.promisesRules,
+        ...rules.typescriptRules,
+        ...rules.reactRules,
+        ...rules.reactHooksRules,
+      },
     },
-  },
+  ],
 };

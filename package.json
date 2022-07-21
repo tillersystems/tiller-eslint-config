@@ -22,13 +22,13 @@
   ],
   "scripts": {
     "release": "./scripts/release.sh",
+    "format": "prettier \"**/*.{js,ts,json,md,yaml,yml}\"",
+    "format:fix": "yarn prettier --write",
     "lint": "eslint .",
-    "format": "prettier --config .prettierrc --color --write \"*.js\"",
+    "lint:fix": "yarn eslint --fix",
     "changelog": "conventional-changelog --preset angular --infile CHANGELOG.md --same-file"
   },
   "devDependencies": {
-    "@babel/core": "^7.18.6",
-    "@babel/eslint-parser": "^7.18.2",
     "@typescript-eslint/eslint-plugin": "^5.30.5",
     "@typescript-eslint/parser": "^5.30.5",
     "conventional-changelog-cli": "^2.2.2",
@@ -42,7 +42,6 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.6.0",
-    "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.30.1",
     "eslint-plugin-react-hooks": "^4.6.0",
