@@ -1,3 +1,12 @@
+# [1.6.0](https://github.com/tillersystems/tiller-eslint-config/compare/v1.4.2...v1.6.0) (2022-07-22)
+
+
+### Features
+
+* **dependencies:** update dependencies versions ([2931c50](https://github.com/tillersystems/tiller-eslint-config/commit/2931c5003bc707e0e355866b1afe52d417c7a70a))
+
+
+
 ## [1.4.2](https://github.com/tillersystems/tiller-eslint-config/compare/v1.4.1...v1.4.2) (2022-04-07)
 
 ## [1.4.1](https://github.com/tillersystems/tiller-eslint-config/compare/v1.3.1...v1.4.1) (2022-04-01)
