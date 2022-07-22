@@ -1,3 +1,7 @@
+## [1.6.1](https://github.com/tillersystems/tiller-eslint-config/compare/v1.6.0...v1.6.1) (2022-07-22)
+
+
+
 # [1.6.0](https://github.com/tillersystems/tiller-eslint-config/compare/v1.4.2...v1.6.0) (2022-07-22)
 
 
