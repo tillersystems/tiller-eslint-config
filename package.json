@@ -16,9 +16,9 @@
   "homepage": "https://github.com/tillersystems/tiller-eslint-config#readme",
   "files": [
     "index.js",
-    "common.js",
     "react.js",
-    "typescript.js"
+    "typescript.js",
+    "eslint"
   ],
   "scripts": {
     "release": "./scripts/release.sh",
