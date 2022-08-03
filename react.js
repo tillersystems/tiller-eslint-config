@@ -4,12 +4,21 @@ module.exports = {
   overrides: [
     {
       // maybe separate them
-      files: ['*.jsx', '*.tsx'],
+      files: ['*.tsx'],
       env: {
         browser: true,
         es2021: true,
       },
       settings: {
+        'import/resolver': {
+          typescript: {
+            alwaysTryTypes: true,
+            project: './tsconfig.json',
+          },
+          node: {
+            extensions: ['.js', '.jsx', '.ts', '.tsx'],
+          },
+        },
         react: {
           version: 'detect',
         },
@@ -37,6 +46,43 @@ module.exports = {
         ...rules.reactRules,
         ...rules.reactHooksRules,
       },
+      plugins: [
+        '@typescript-eslint',
+        'import',
+        'promise',
+        'eslint-comments',
+        'jsx-a11y',
+        'react',
+        'react-hooks',
+        'testing-library',
+      ],
+      parser: '@typescript-eslint/parser',
+      parserOptions: {
+        ecmaVersion: 2021,
+        project: 'tsconfig.json',
+        sourceType: 'module',
+        // tsconfigRootDir: __dirname,
+        warnOnUnsupportedTypeScriptVersion: true,
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+      overrides: [
+        {
+          files: ['**/tests/**'],
+          env: {
+            jest: true,
+          },
+          extends: ['plugin:jest/recommended'],
+          plugins: ['jest'],
+          settings: {
+            jest: {
+              version: 26,
+            },
+          },
+          rules: rules.jestRules,
+        },
+      ],
     },
   ],
 };

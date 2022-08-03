@@ -1,6 +1,10 @@
 module.exports = {
   'import/no-deprecated': 'warn',
-  'import/extensions': ['warn', 'ignorePackages', { js: 'never', ts: 'never' }],
+  'import/extensions': [
+    'warn',
+    'ignorePackages',
+    { js: 'never', ts: 'never', tsx: 'never', jsx: 'never' },
+  ],
   'import/no-unresolved': 'warn',
   'import/no-webpack-loader-syntax': 'warn',
   'import/no-extraneous-dependencies': [
